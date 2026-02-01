@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Be My Valentine?</title>
+  <meta charset="UTF-8">
+  <title>Valentine ❤️</title>
 
-<style>
-body {
-    text-align: center;
-    font-family: Arial;
-    background-color: pink;
-    margin-top: 50px;
-}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #ffe6eb;
+      text-align: center;
+    }
 
-button {
-    padding: 10px 20px;
-    font-size: 20px;
-    margin: 10px;
-    cursor: pointer;
-}
+    .cat {
+      width: 200px;
+      margin-top: 20px;
+    }
 
-#no {
-    position: absolute;
-}
+    h1 {
+      margin-top: 20px;
+      color: #d6336c;
+    }
 
-img {
-    width: 300px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-</style>
+    p {
+      font-size: 18px;
+      color: #333;
+    }
 
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff4d6d;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #e63950;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- Cute Cat Meme -->
-<img src="catmeme.jpg" alt="Cute Cat Meme">
+  <!-- CAT IMAGE ON TOP -->
+  <img src="cat.png" alt="Cute Cat" class="cat">
 
-<h1>Will you be my Valentine? ❤️</h1>
+  <h1>Happy Valentine’s ❤️</h1>
+  <p>Will you be my Valentine?</p>
 
-<button onclick="yes()">YES</button>
-<button id="no" onmouseover="move()">NO</button>
-
-<script>
-function yes() {
-    document.body.innerHTML = "<h1>YAY! ❤️ See you on Valentine's Day!</h1>";
-}
-
-function move() {
-    var x = Math.random() * (window.innerWidth - 100);
-    var y = Math.random() * (window.innerHeight - 50);
-
-    document.getElementById("no").style.left = x + "px";
-    document.getElementById("no").style.top = y + "px";
-}
-</script>
+  <button onclick="alert('Yay! 💕')">Yes 💖</button>
 
 </body>
 </html>
